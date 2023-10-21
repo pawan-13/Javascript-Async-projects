@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the background color</title>
+</head>
+<style>
+  .EffectShow{
+   text-align: center;
+   position: relative;
+   top:200px;
+  }
+  .EffectShow h1{
+    color: darkcyan;
+    font-weight: 700;
+  }
+  #start{
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #stop{
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #start:active,#start:hover{
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid darkcyan;
+  }
+  #stop:active,#stop:hover{
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid darkcyan;
+  }
+</style>
+<body>
+    <div class="EffectShow">
+      <h1>Start should change the background color in every second.</h1>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+</body>
+<script>
+     const Colorpick = function(){
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+        for(let i=0; i<6; i++){
+            color = color + hex[Math.floor(Math.random()*16)];
+        }
+        return color;
+      }
+      let changeColor;
+      const colorChange = function(){
+        if(!changeColor){
+            changeColor =  setInterval(Startchange,1000);
+        }
+        function Startchange(){
+           document.body.style.backgroundColor = Colorpick();
+        };
+      };
+
+      const colorStop = function(){
+        clearInterval(changeColor);
+        changeColor = null;        
+      }
+
+      document.querySelector('#start').addEventListener('click', colorChange);
+      document.querySelector('#stop').addEventListener('click', colorStop);
+</script>
+</html>
