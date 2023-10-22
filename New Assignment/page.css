@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f6f6f6!important;
+    overflow-x: hidden;
+}
+.Techtask .Ped-Chatbot img {
+    width: 98%;
+    border-radius: 10px;
+    margin: 18px;
+    height: 77vh;
+}
+.box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.Techtask .underbox {
+   background-color: white!important;
+   border-radius: 8px;
+   width: 47%;
+   padding: 10px;
+}
+.underbox .para1{
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: lightpink;
+    color: brown;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-align: center;
+}
+.underbox .para2{
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 8px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays In Javascript</title>
+</head>
+<style>
+    .heading {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1 class="heading">Arrays In Javascript</h1>
+    <h2 class="heading">This IS Car List</h2>
+    <p class="heading" id="car"></p>
+</body> 
+<script>
+    let car = ["Volvo", "TataSumo", "Jaguar", "LandRover"];
+    for (let i = 0; i < car.length; i++) {
+        results = car + "<br/>";
+        document.getElementById("car").innerHTML = results;
+    }   
+    
+</script>
+</html>

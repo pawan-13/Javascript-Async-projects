@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Assignment .nav-under{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 20px;
+}
+.Assignment .nav-under li{
+    margin: 0px 28px;
+    font-weight: 700;
+}
+.Assignment .underline {
+    margin-top: 12px;
+}
+.Assignment .lorembox{
+    margin-top: 60px;
+}
+.Assignment .firsthead{
+    font-weight: 700;
+    color: #000000;
+}
+.Assignment .firstpara{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.Assignment .midpic{
+    width: 100%;
+    height: 80vh;
+}
+.Assignment .lorembox .size-box{
+    width: 200px;
+    color: #ffffff;
+    background-color: #1492E6;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 33px;
+    opacity: 1;
+    padding: 12px 10px;
+    outline: none;
+    border: none;
+    margin-top: 26px;
+}
+.Assignment .boxcard{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 19px;
+    opacity: 1;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 50px;
+    height: 210px;
+}
+.Assignment .sechead{
+    font-size: 30px;
+    columns: #000000;
+    font-weight: 700;
+    text-align: center;
+    opacity: 100%;
+    margin-top: 100px;
+}
+.Assignment .box3-para1{
+   font-size: 14px;
+   color: #000000;
+   font-weight: 700;
+   margin-top: 25px;
+}
+.Assignment .box3-para2{
+    font-size: 14px;
+    color: #000000;
+    margin-top: -5px;
+ }
+ .Assignment .laptopgirl{
+    background-repeat: no-repeat;
+    width: 65%;
+    mix-blend-mode: multiply;    
+    filter: grayscale(#767E83);    
+    position: relative;
+    left: -48px;
+    top: 30px;
+    filter: grayscale(100%);
+ }
+ .Assignment .moneysave{
+    width: 100%;
+ }
+ .Assignment .moneysave .moneypara{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+ }
+ .Assignment .moneysave .check-box{
+    width: 200px;
+    color: #ffffff;
+    background-color: #1492E6;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 33px;
+    opacity: 1;
+    padding: 12px 10px;
+    outline: none;
+    border: none;
+    margin-top: 2px;
+}

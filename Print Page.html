@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Pint Page</title>
+</head>
+<style>
+    .logo {
+        width: 50px;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .button {
+        display: block;
+        margin: auto;
+    }
+</style>
+
+<body id="Body">
+    <img src="./Images/SMC-global.webp" alt="" class="logo">
+    <h1 class="heading">Printable paragraph</h1>
+    <p class="heading" id="Data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore numquam quas
+        voluptatibus,
+        maiores eum?
+        Minima voluptate fugiat ullam voluptatibus totam temporibus. Deleniti officiis iusto rem architecto, reiciendis
+        velit repellat.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatem sint error nemo eveniet consectetur
+        adipisci optio. Modi quasi minima at libero dolores, corrupti saepe tempore nisi. Voluptate, quia qui.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laudantium. Accusantium error deleniti
+        quisquam ea iste rerum consequuntur dignissimos inventore maiores quo. Accusantium perspiciatis quis est
+        possimus saepe facilis a?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic suscipit, esse et ratione dicta natus omnis quae
+        blanditiis sit amet doloremque fuga, dolorem saepe aliquid corporis quibusdam earum nemo illum?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perspiciatis, totam nihil, consequatur nulla
+        officia excepturi natus laudantium eaque odio at dicta? Sequi fugiat ratione placeat qui dicta cum voluptatem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate dolore qui atque quae cumque quidem
+        debitis. At voluptatibus iste quia dignissimos beatae non? Officia, magnam praesentium? Tempora, ipsum alias!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur corporis repellat quibusdam, ab obcaecati
+        quis reprehenderit voluptatem eum? Rem deleniti deserunt nulla nemo natus culpa aliquid provident ducimus eaque
+        totam!
+    </p>
+    <button class="button" onclick="PrintPage()">Print This Page</button>
+    <p class="heading" id="Data2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit inventore quam
+        distinctio. Itaque commodi
+        quibusdam dolorem, laudantium pariatur debitis deserunt modi est error delectus, veritatis harum tenetur enim
+        labore. Sequi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, nulla. Dolores nemo dolore fugit eligendi
+        nesciunt minima amet culpa, molestiae repellat esse delectus eveniet maiores magni temporibus cumque cum
+        doloremque?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis quidem odio voluptatum dignissimos.
+        Quibusdam delectus, aliquid enim saepe aliquam iure nisi facere aperiam sequi, eveniet a fugiat dicta? Beatae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum ea culpa deleniti quis! Tempore
+        aliquam facilis dicta nobis nulla qui dolorem unde? Fugit rem, tempore dignissimos quos eveniet eos!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi magnam nemo eius ducimus. Exercitationem libero
+        quam, molestias illum distinctio et numquam officia aliquid debitis dolorem. Sit cum minima non atque!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia similique debitis quasi nihil aliquid itaque
+        placeat amet, eligendi earum est? Inventore vitae necessitatibus quia tempore unde exercitationem fuga labore
+        numquam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis autem est, veritatis nulla quibusdam at
+        maiores. Corporis eum ad quis aut! Unde inventore praesentium optio consequuntur debitis ipsam quos perferendis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda nulla nam illo culpa pariatur ipsam
+        velit harum, repudiandae iusto quidem, eum provident? Voluptatem, quam et! Expedita nihil quidem quae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illum reprehenderit ratione ipsa praesentium
+        perspiciatis cumque corrupti, illo alias incidunt a, quaerat corporis beatae suscipit tempora dolor odit?
+        Architecto, rerum.
+    </p>
+    <button class="button" onclick="PrintPage2()">Print This Page</button>
+</body>
+<script>
+    function PrintPage() {
+        var Body = document.getElementById("Body").innerHTML;
+        var Data = document.getElementById("Data").innerHTML;
+        document.getElementById("Body").innerHTML = Data;
+        window.print();
+        document.getElementById("Body").innerHTML = Body;
+    }
+    function PrintPage2() {
+        var Body = document.getElementById("Body").innerHTML;
+        var Data2 = document.getElementById("Data2").innerHTML;
+        document.getElementById("Body").innerHTML = Data2;
+        window.print();
+        document.getElementById("Body").innerHTML = Body;
+    }
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+<body>
+      <h1>This is a  business...This is a Pure business</h1>
+      <button>Click</button>
+</body>
+<script>
+       const Changetext = function(){
+            document.querySelector('h1').innerHTML =  "Hello guys be focus on code";
+        }
+       const Stop = setTimeout(Changetext,3000);
+
+            document.querySelector('button').addEventListener('click', function(){
+                clearTimeout(Stop);
+                console.log("Stopped");
+            })
+        
+</script>
+</html>

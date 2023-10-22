@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+body{
+    background-color: #f6f6f6!important;
+}
+.Assignment .side-image img{
+    width: 100%;
+    margin: 18px 0;
+    border-radius: 12px;
+}
+.Assignment .box{
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 18px 0;
+    padding: 10px;
+    width: 100%;
+}
+.Assignment .box .underbox{
+    background-color: #fff0b3;
+    color: brown;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+}
+.box .special-icon{
+    float: right;
+    font-size: 12px;
+    position: relative;
+    top: 6px;
+}
+.Assignment .box .headcontent{
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 4px;
+    line-height: 20px;
+}
+.Assignment .box .paracontent{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
